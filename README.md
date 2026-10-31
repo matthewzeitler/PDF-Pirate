@@ -15,13 +15,15 @@
 
 ## Download
 
-**[Get the latest release →](https://github.com/pdfpirate/PDF-Pirate/releases/latest)**
+**[Get the latest release →](https://github.com/matthewzeitler/PDF-Pirate/releases/latest)**
 
-| Platform | File |
+| Platform | Download |
 | --- | --- |
-| macOS, Apple Silicon | `PDF-Pirate-<version>-arm64.dmg` |
-| macOS, Intel | `PDF-Pirate-<version>-x64.dmg` |
-| Windows 10 and 11 | `PDF-Pirate-Setup-<version>.exe` |
+| macOS, Apple Silicon (M1 and newer) | [PDF-Pirate-1.0.0-arm64.dmg](https://github.com/matthewzeitler/PDF-Pirate/releases/download/v1.0.0/PDF-Pirate-1.0.0-arm64.dmg) |
+| macOS, Intel | [PDF-Pirate-1.0.0-x64.dmg](https://github.com/matthewzeitler/PDF-Pirate/releases/download/v1.0.0/PDF-Pirate-1.0.0-x64.dmg) |
+| Windows 10 and 11 | [PDF-Pirate-Setup-1.0.0.exe](https://github.com/matthewzeitler/PDF-Pirate/releases/download/v1.0.0/PDF-Pirate-Setup-1.0.0.exe) |
+
+SHA-256 checksums: [SHA256SUMS.txt](https://github.com/matthewzeitler/PDF-Pirate/releases/download/v1.0.0/SHA256SUMS.txt)
 
 PDF Pirate isn't signed with a paid Apple or Microsoft certificate yet, so the first time you open it your computer will ask you to confirm. On macOS, open **System Settings → Privacy & Security** and click **Open Anyway**. On Windows, click **More info → Run anyway**.
 

@@ -147,7 +147,7 @@ function createWindow(): void {
 }
 
 app.whenReady().then(() => {
-  electronApp.setAppUserModelId('io.github.pdfpirate')
+  electronApp.setAppUserModelId('io.github.matthewzeitler.pdfpirate')
 
   // macOS shows the bundled .icns once packaged, but in dev the Dock falls back
   // to Electron's default — override it so the logo shows everywhere.

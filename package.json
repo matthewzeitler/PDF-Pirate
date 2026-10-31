@@ -1,8 +1,8 @@
 {
   "name": "pdf-pirate",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A free, open-source PDF editor, viewer, and combiner for Windows and Mac",
-  "author": "pdfpirate",
+  "author": "matthewzeitler",
   "license": "MIT",
   "main": "./out/main/index.js",
   "scripts": {
@@ -16,7 +16,7 @@
     "build:win": "electron-vite build && electron-builder --win"
   },
   "build": {
-    "appId": "io.github.pdfpirate",
+    "appId": "io.github.matthewzeitler.pdfpirate",
     "productName": "PDF Pirate",
     "directories": {
       "buildResources": "build"
@@ -27,13 +27,35 @@
     ],
     "mac": {
       "icon": "build/icon.icns",
-      "category": "public.app-category.productivity"
+      "category": "public.app-category.productivity",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "PDF-Pirate-${version}-${arch}.${ext}",
+      "identity": null
     },
     "win": {
-      "icon": "build/icon.ico"
+      "icon": "build/icon.ico",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ]
     },
     "linux": {
       "icon": "build/icon.png"
+    },
+    "nsis": {
+      "artifactName": "PDF-Pirate-Setup-${version}.${ext}"
     }
   },
   "dependencies": {
